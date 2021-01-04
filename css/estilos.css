@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+header {
+  background-color: #32a852;
+  font-family: candara, sans-serif;
+  font-size: 15px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+header p {
+  color: white;
+  margin-left: 10px; }
+
+.contenedor--alinea-vertical {
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+
+/* estilos para iconos de redes sociales en el encabezado*/
+.contenedor__img--redes {
+  text-align: right;
+  padding-right: 25px; }
+
+.contenedor__img--redes img {
+  text-align: right;
+  padding-right: 25px; }
+
+/* elementos del footer*/
+.tel-email-pie {
+  display: inline-flex; }
+
+/* estilo para información de teléfono en el encabezado*/
+.contenedor__img--tel {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 60px; }
+
+/* icono de whatsapp en el encabezado*/
+.icono-whatsapp {
+  padding-right: 15px; }
+
+/* estilo para logo y texto del header*/
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.logo h1 {
+  padding-right: 400px; }
+
+h1 {
+  color: #c42b2b;
+  font-family: candara;
+  /*font-size: 30px;*/
+  font-size: calc(1em + 1vw);
+  padding-top: 45px;
+  /*margin-left: 30px;*/ }
+
+h1 {
+  animation-duration: 10s;
+  animation-name: letrero; }
+
+@keyframes letrero {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 4; } }
+
+.nav.navbar {
+  background: #f5d7eb; }
+
+h2 {
+  color: #c42b2b;
+  font-family: tahoma;
+  display: flex;
+  justify-content: center; }
+
+h3, h4 {
+  color: #c42b2b;
+  font-family: tahoma;
+  margin-bottom: 5px;
+  font-size: 20px; }
+
+/*estilo para texto de pagina inicio*/
+section p {
+  font-family: candara;
+  font-size: 30px;
+  color: #32a852;
+  text-align: center;
+  font-weight: bold;
+  height: 15px;
+  padding: 20px; }
+
+/*estilo para dos lineas de texto*/
+.contenedor__parrafos {
+  font-size: 25px;
+  font-weight: bold;
+  color: #32a852;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 10px;
+  margin-top: 10px; }
+
+@media (max-width: 700px) {
+  .contenedor__parrafos {
+    font-size: 12px;
+    line-height: 4; } }
+
+.contenedor__galeria {
+  height: 500px; }
+
+footer {
+  background-color: #32a852;
+  text-align: center;
+  list-style: none;
+  font-family: tahoma;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  height: auto;
+  /**display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;**/ }
+
+footer ul li {
+  list-style: none; }
+
+/*estilos aplicados a sección de categorías mas populares de la sección inicio*/
+div.galeria {
+  border: 1px solid #ccc; }
+
+div.galeria:hover {
+  border: 1px solid #777; }
+
+div.galeria img {
+  width: 100%;
+  height: 300px; }
+
+div.contenedor__desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 20px; }
+
+#contenedor__btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 5px; }
+
+.contenedor__precio {
+  padding: 1px 5px 5px 5px; }
+
+* {
+  box-sizing: border-box; }
+
+.contenedor__img {
+  padding: 0 6px;
+  float: left;
+  width: 25%; }
+
+@media only screen and (max-width: 700px) {
+  .contenedor__img {
+    width: 50%;
+    margin: 6px 0; } }
+
+@media only screen and (max-width: 500px) {
+  .contenedor__img {
+    width: 100%; } }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Alineacion de elementos de categoria populares */
+.contenedor__h2--cat {
+  display: flex;
+  justify-content: center; }
+
+#contenedor--pop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+.seccion__div--caja-ramos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.seccion__div--caja-ramos div {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.seccion__div--caja-ramos div p {
+  font-family: tahoma;
+  font-size: 20px;
+  color: #c42b2b;
+  font-style: normal; }
+
+/* este proceso está en la sección compras*/
+.seccion__lista--proceso-compra {
+  font-size: 20px;
+  font-family: tahoma;
+  color: #32a852; }
+
+/* corresponde a la sección Compras */
+#seccion__compras {
+  color: #f70a4d; }
+
+/* esta es una grilla de la sección compras */
+.compras p {
+  color: #c42b2b;
+  font-family: candara;
+  font-size: 30px;
+  font-style: normal; }
+
+.compras h3 {
+  font-size: 30px;
+  font-family: tahoma;
+  color: #c42b2b;
+  text-align: center;
+  margin: 5px 10px 10px 10px; }
+
+.seccion__grid {
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+  align-items: center;
+  height: 400px; }
+
+.seccion__grid div p {
+  color: #c42b2b;
+  font-family: candara;
+  font-size: 20px;
+  font-style: normal; }
+
+.seccion__grid div:hover {
+  transform: scale(2, 2); }
+
+.seccion__div--titulo-compras h3 {
+  display: flex;
+  justify-content: center;
+  color: #c42b2b;
+  font-family: candara;
+  font-size: 30px;
+  font-style: normal;
+  margin: 5px 5px 45px 5px; }
+
+.seccion__tabla {
+  width: 1200px;
+  align-content: center;
+  margin: auto; }
+
+/* corresponde a la sección catálogo*/
+#seccion--ramos {
+  color: #c42b2b; }
+
+/*corresponde a la sección contáctenos*/
+.seccion__legend--titulo-ramos {
+  font-size: 30px;
+  font-family: tahoma;
+  color: #c42b2b;
+  text-align: center; }
+
+/* Seccion Contáctenos */
+#seccion--contacto {
+  font-family: tahoma;
+  font-size: 15px;
+  color: #c42b2b; }
+
+#seccion--contacto form input {
+  width: 100%;
+  height: 35px;
+  transition: all 1s; }
+
+#seccion--contacto form fieldset label {
+  margin: 10px; }
+
+#seccion--contacto form fieldset input {
+  margin: 10px; }
+
+#seccion--contacto form input:focus {
+  width: 100%;
+  font-size: 15px; }
+
+.form__botones input {
+  padding: 15px;
+  transition: all 1s; }
+
+.form__botones input:hover {
+  background: #32a852; }
+
+.contenedor__form--bordes {
+  padding: 20px;
+  margin: 15px;
+  width: 100%;
+  background-color: #F7F7F7; }
+
+/* 
+corresponde a la seccion ocasiones*/
+#seccion--ocasiones {
+  color: #f70a4d; }
